@@ -1,0 +1,4934 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>[YOUR NAME] | Customer Support, AI Data &amp; E-commerce Professional</title>
+<meta name="description" content="Professional portfolio of [YOUR NAME], specializing in customer support, AI data annotation and evaluation, e-commerce operations, content management, and mobile photography and videography." />
+<link rel="canonical" href="https://example.com/" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="[YOUR NAME] | Customer Support, AI Data &amp; E-commerce Professional" />
+<meta property="og:description" content="Portfolio of [YOUR NAME]: customer support, AI data annotation &amp; evaluation, e-commerce operations, content management, mobile photography &amp; videography." />
+<meta property="og:url" content="https://example.com/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="[YOUR NAME] | Customer Support, AI Data &amp; E-commerce Professional" />
+<meta name="twitter:description" content="Portfolio of [YOUR NAME]: customer support, AI data quality, e-commerce operations, content management, and visual content." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+<style>
+/* =========================================================
+   1. DESIGN VARIABLES
+   ========================================================= */
+
+:root{
+  --bg:#ffffff;
+  --surface:#ffffff;
+  --surface-2:#f5f7f9;
+
+  --text:#17202a;
+  --muted:#5d6873;
+
+  --border:#e3e7eb;
+
+  --accent:#237582;
+  --accent-soft:#eaf4f5;
+  --accent-contrast:#ffffff;
+
+  --navy:#142b45;
+
+  --shadow:
+    0 1px 2px rgba(20,43,69,.04),
+    0 8px 24px -16px rgba(20,43,69,.16);
+
+  --shadow-lg:
+    0 2px 5px rgba(20,43,69,.05),
+    0 20px 45px -25px rgba(20,43,69,.20);
+
+  --radius:10px;
+  --maxw:1140px;
+
+  --ff-sans:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+
+  --ff-display:
+    "Inter",
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    Helvetica,
+    Arial,
+    sans-serif;
+}
+
+[data-theme="dark"]{
+  --bg:#0e1722;
+  --surface:#121d2a;
+  --surface-2:#172332;
+
+  --text:#edf2f5;
+  --muted:#9ca9b5;
+
+  --border:#263544;
+
+  --accent:#5caab5;
+  --accent-soft:#183239;
+  --accent-contrast:#071316;
+
+  --navy:#edf2f5;
+
+  --shadow:
+    0 1px 2px rgba(0,0,0,.35),
+    0 8px 24px -12px rgba(0,0,0,.45);
+
+  --shadow-lg:
+    0 2px 5px rgba(0,0,0,.35),
+    0 24px 48px -24px rgba(0,0,0,.6);
+}
+
+
+/* =========================================================
+   2. GLOBAL STYLES
+   ========================================================= */
+
+*,
+*::before,
+*::after{
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+  scroll-padding-top:84px;
+  -webkit-text-size-adjust:100%;
+}
+
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--text);
+  font-family:var(--ff-sans);
+  font-size:16px;
+  line-height:1.6;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+img{
+  max-width:100%;
+  display:block;
+}
+
+a{
+  color:inherit;
+  text-decoration:none;
+}
+
+button{
+  font:inherit;
+}
+
+h1,
+h2,
+h3,
+h4{
+  font-family:var(--ff-sans);
+  line-height:1.2;
+  margin:0;
+  letter-spacing:-.025em;
+}
+
+h1{
+  font-weight:600;
+}
+
+h2{
+  font-weight:600;
+  font-size:clamp(1.65rem,3vw,2.15rem);
+}
+
+h3{
+  font-size:1.05rem;
+  font-weight:600;
+}
+
+p{
+  margin:0;
+}
+
+ul{
+  margin:0;
+  padding:0;
+  list-style:none;
+}
+
+:focus-visible{
+  outline:2px solid var(--accent);
+  outline-offset:3px;
+  border-radius:4px;
+}
+
+.container{
+  width:100%;
+  max-width:var(--maxw);
+  margin-inline:auto;
+  padding-inline:24px;
+}
+
+.section{
+  padding:88px 0;
+  border-top:1px solid var(--border);
+}
+
+.section--tight{
+  padding:64px 0;
+}
+
+.eyebrow{
+  font-size:.72rem;
+  font-weight:700;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--accent);
+  margin-bottom:16px;
+}
+
+.section-head{
+  max-width:680px;
+  margin-bottom:44px;
+}
+
+.section-head p{
+  color:var(--muted);
+  margin-top:12px;
+}
+
+.muted{
+  color:var(--muted);
+}
+
+.small{
+  font-size:.875rem;
+}
+
+.placeholder-tag{
+  font-family:
+    ui-monospace,
+    SFMono-Regular,
+    Menlo,
+    monospace;
+
+  font-size:.78rem;
+  color:var(--accent);
+  background:var(--accent-soft);
+  border:1px dashed var(--accent);
+  padding:1px 6px;
+  border-radius:5px;
+  display:inline-block;
+}
+
+.card{
+  background:var(--surface);
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+  padding:26px;
+  box-shadow:var(--shadow);
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease,
+    border-color .25s ease;
+}
+
+.card:hover{
+  transform:translateY(-3px);
+  box-shadow:var(--shadow-lg);
+  border-color:color-mix(
+    in oklab,
+    var(--accent) 40%,
+    var(--border)
+  );
+}
+
+.grid{
+  display:grid;
+  gap:20px;
+}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:8px;
+
+  min-height:44px;
+  padding:11px 20px;
+
+  border-radius:8px;
+
+  font-size:.92rem;
+  font-weight:600;
+
+  border:1px solid var(--border);
+  background:var(--surface);
+  color:var(--text);
+
+  cursor:pointer;
+
+  transition:
+    background .2s ease,
+    color .2s ease,
+    border-color .2s ease,
+    transform .2s ease;
+}
+
+.btn:hover{
+  transform:translateY(-1px);
+  border-color:var(--accent);
+  color:var(--accent);
+}
+
+.btn--primary{
+  background:var(--accent);
+  border-color:var(--accent);
+  color:var(--accent-contrast);
+}
+
+.btn--primary:hover{
+  color:var(--accent-contrast);
+  filter:brightness(1.07);
+}
+
+.btn--ghost{
+  background:transparent;
+}
+
+.tag{
+  display:inline-block;
+  font-size:.8rem;
+  font-weight:500;
+  color:var(--muted);
+
+  background:var(--surface-2);
+  border:1px solid var(--border);
+
+  border-radius:999px;
+  padding:5px 12px;
+}
+
+.icon{
+  width:17px;
+  height:17px;
+  flex:none;
+
+  stroke:currentColor;
+  fill:none;
+  stroke-width:1.8;
+  stroke-linecap:round;
+  stroke-linejoin:round;
+}
+
+
+/* =========================================================
+   3. NAVIGATION
+   ========================================================= */
+
+.skip-link{
+  position:absolute;
+  left:-9999px;
+  top:0;
+
+  background:var(--accent);
+  color:var(--accent-contrast);
+
+  padding:10px 16px;
+  z-index:200;
+}
+
+.skip-link:focus{
+  left:12px;
+  top:12px;
+  border-radius:6px;
+}
+
+.nav{
+  position:sticky;
+  top:0;
+  z-index:100;
+
+  background:color-mix(
+    in oklab,
+    var(--bg) 92%,
+    transparent
+  );
+
+  backdrop-filter:saturate(180%) blur(10px);
+
+  border-bottom:1px solid var(--border);
+}
+
+.nav__inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  height:66px;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+
+  font-weight:600;
+  letter-spacing:-.02em;
+}
+
+.brand__mark{
+  width:34px;
+  height:34px;
+
+  border-radius:7px;
+
+  background:var(--navy);
+  color:#ffffff;
+
+  display:grid;
+  place-items:center;
+
+  font-size:.78rem;
+  font-weight:700;
+}
+
+.nav__links{
+  display:flex;
+  align-items:center;
+  gap:4px;
+}
+
+.nav__links a{
+  padding:8px 11px;
+  border-radius:7px;
+
+  font-size:.88rem;
+  font-weight:500;
+
+  color:var(--muted);
+
+  transition:
+    color .2s ease,
+    background .2s ease;
+}
+
+.nav__links a:hover{
+  color:var(--text);
+  background:var(--surface-2);
+}
+
+.nav__links a.is-active{
+  color:var(--accent);
+  background:var(--accent-soft);
+}
+
+.nav__actions{
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+
+.icon-btn{
+  width:44px;
+  height:44px;
+
+  display:grid;
+  place-items:center;
+
+  border-radius:8px;
+
+  border:1px solid var(--border);
+  background:var(--surface);
+  color:var(--text);
+
+  cursor:pointer;
+
+  transition:
+    border-color .2s ease,
+    color .2s ease;
+}
+
+.icon-btn:hover{
+  border-color:var(--accent);
+  color:var(--accent);
+}
+
+.nav__toggle{
+  display:none;
+}
+
+.nav__mobile{
+  display:none;
+
+  border-top:1px solid var(--border);
+
+  padding:12px 0 20px;
+}
+
+.nav__mobile a{
+  display:block;
+
+  padding:12px 4px;
+
+  border-bottom:1px solid var(--border);
+
+  font-weight:500;
+}
+
+.nav__mobile a:last-child{
+  border-bottom:none;
+}
+
+[data-theme="dark"] .sun{
+  display:none;
+}
+
+[data-theme="light"] .moon{
+  display:none;
+}
+
+
+/* =========================================================
+   4. HERO
+   ========================================================= */
+
+.hero{
+  padding:84px 0 76px;
+}
+
+.hero__grid{
+  display:grid;
+  grid-template-columns:1.35fr .95fr;
+  gap:56px;
+  align-items:center;
+}
+
+.hero h1{
+  font-family:var(--ff-sans);
+  font-weight:600;
+
+  font-size:clamp(
+    2.8rem,
+    6vw,
+    4.7rem
+  );
+
+  line-height:1.02;
+  letter-spacing:-.045em;
+
+  color:var(--navy);
+
+  margin-bottom:20px;
+}
+
+.hero__role{
+  max-width:760px;
+
+  font-size:clamp(
+    1.05rem,
+    2vw,
+    1.22rem
+  );
+
+  font-weight:500;
+
+  color:var(--text);
+
+  line-height:1.55;
+
+  margin-bottom:22px;
+}
+
+.hero__sub{
+  max-width:700px;
+
+  color:var(--muted);
+
+  font-size:1.05rem;
+  line-height:1.75;
+
+  margin-bottom:28px;
+}
+
+.hero__actions{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.hero__meta{
+  display:flex;
+  flex-wrap:wrap;
+  gap:18px;
+
+  margin-top:28px;
+
+  font-size:.85rem;
+  color:var(--muted);
+}
+
+.hero__meta span{
+  display:flex;
+  align-items:center;
+  gap:7px;
+}
+
+.photo{
+  position:relative;
+
+  aspect-ratio:4/5;
+
+  border-radius:14px;
+  overflow:hidden;
+
+  border:1px solid var(--border);
+
+  background:
+    repeating-linear-gradient(
+      45deg,
+      var(--surface-2) 0 12px,
+      var(--surface) 12px 24px
+    );
+
+  box-shadow:var(--shadow-lg);
+
+  display:grid;
+  place-items:center;
+
+  text-align:center;
+
+  padding:24px;
+}
+
+.photo::after{
+  content:"";
+
+  position:absolute;
+  inset:12px;
+
+  border:1px dashed var(--border);
+
+  border-radius:10px;
+
+  pointer-events:none;
+}
+
+.photo__label{
+  font-family:
+    ui-monospace,
+    Menlo,
+    monospace;
+
+  font-size:.85rem;
+
+  color:var(--muted);
+}
+
+
+/* =========================================================
+   5. ABOUT
+   ========================================================= */
+
+.about__grid{
+  display:grid;
+  grid-template-columns:1.4fr 1fr;
+  gap:48px;
+  align-items:start;
+}
+
+.about p + p{
+  margin-top:16px;
+}
+
+.highlights{
+  display:grid;
+  gap:12px;
+}
+
+.highlight{
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+
+  padding:16px 18px;
+
+  background:var(--surface-2);
+}
+
+.highlight strong{
+  display:block;
+  font-size:.95rem;
+}
+
+.highlight span{
+  font-size:.83rem;
+  color:var(--muted);
+}
+
+
+/* =========================================================
+   6. COMPETENCY ACCORDION
+   ========================================================= */
+
+.accordion{
+  display:grid;
+  gap:12px;
+}
+
+.acc{
+  border:1px solid var(--border);
+  border-radius:var(--radius);
+
+  background:var(--surface);
+
+  overflow:hidden;
+}
+
+.acc__btn{
+  width:100%;
+
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  gap:16px;
+
+  padding:18px 22px;
+
+  background:none;
+  border:0;
+
+  color:var(--text);
+
+  cursor:pointer;
+  text-align:left;
+
+  font-weight:600;
+}
+
+.acc__btn:hover{
+  color:var(--accent);
+}
+
+.acc__btn .chev{
+  transition:transform .25s ease;
+}
+
+.acc__btn[aria-expanded="true"] .chev{
+  transform:rotate(180deg);
+}
+
+.acc__panel{
+  padding:0 22px 22px;
+
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+}
+
+.acc__panel[hidden]{
+  display:none;
+}
+
+
+/* =========================================================
+   7. TOOLS
+   ========================================================= */
+
+.tools{
+  display:flex;
+  flex-wrap:wrap;
+  gap:10px;
+}
+
+.tool{
+  display:flex;
+  align-items:center;
+  gap:9px;
+
+  padding:10px 14px;
+
+  border:1px solid var(--border);
+
+  border-radius:8px;
+
+  background:var(--surface);
+
+  font-size:.88rem;
+  font-weight:500;
+
+  box-shadow:var(--shadow);
+}
+
+.tool .dot{
+  width:7px;
+  height:7px;
+
+  border-radius:50%;
+
+  background:var(--accent);
+}
+
+
+/* =========================================================
+   8. EXPERIENCE
+   ========================================================= */
+
+.timeline{
+  position:relative;
+  padding-left:28px;
+}
+
+.timeline::before{
+  content:"";
+
+  position:absolute;
+
+  left:6px;
+  top:6px;
+  bottom:6px;
+
+  width:1px;
+
+  background:var(--border);
+}
+
+.tl-item{
+  position:relative;
+  padding-bottom:34px;
+}
+
+.tl-item:last-child{
+  padding-bottom:0;
+}
+
+.tl-item::before{
+  content:"";
+
+  position:absolute;
+
+  left:-27px;
+  top:9px;
+
+  width:13px;
+  height:13px;
+
+  border-radius:50%;
+
+  background:var(--bg);
+
+  border:2px solid var(--accent);
+}
+
+.tl-head{
+  display:flex;
+  flex-wrap:wrap;
+
+  justify-content:space-between;
+
+  gap:8px;
+
+  align-items:baseline;
+}
+
+.tl-sub{
+  color:var(--accent);
+
+  font-weight:600;
+
+  font-size:.92rem;
+
+  margin-top:2px;
+}
+
+.tl-list{
+  margin-top:14px;
+}
+
+.tl-list h4{
+  font-size:.76rem;
+
+  letter-spacing:.12em;
+
+  text-transform:uppercase;
+
+  color:var(--muted);
+
+  margin-bottom:8px;
+}
+
+.tl-list li{
+  position:relative;
+
+  padding-left:18px;
+
+  color:var(--muted);
+
+  font-size:.92rem;
+
+  margin-bottom:6px;
+}
+
+.tl-list li::before{
+  content:"";
+
+  position:absolute;
+
+  left:0;
+  top:10px;
+
+  width:6px;
+  height:1px;
+
+  background:var(--accent);
+}
+
+
+/* =========================================================
+   9. PROJECTS
+   ========================================================= */
+
+.filters{
+  display:flex;
+  flex-wrap:wrap;
+  gap:8px;
+
+  margin-bottom:28px;
+}
+
+.filter{
+  padding:8px 14px;
+
+  border-radius:999px;
+
+  border:1px solid var(--border);
+
+  background:var(--surface);
+
+  color:var(--muted);
+
+  font-size:.84rem;
+  font-weight:500;
+
+  cursor:pointer;
+
+  transition:all .2s ease;
+}
+
+.filter:hover{
+  color:var(--text);
+}
+
+.filter.is-active{
+  background:var(--accent);
+
+  border-color:var(--accent);
+
+  color:var(--accent-contrast);
+}
+
+.projects{
+  grid-template-columns:
+    repeat(
+      auto-fill,
+      minmax(320px,1fr)
+    );
+}
+
+.project{
+  display:flex;
+  flex-direction:column;
+
+  padding:0;
+
+  overflow:hidden;
+}
+
+.project__img{
+  aspect-ratio:16/9;
+
+  background:
+    repeating-linear-gradient(
+      45deg,
+      var(--surface-2) 0 12px,
+      var(--surface) 12px 24px
+    );
+
+  border-bottom:1px solid var(--border);
+
+  display:grid;
+  place-items:center;
+}
+
+.project__body{
+  padding:22px;
+
+  display:flex;
+  flex-direction:column;
+
+  gap:12px;
+
+  flex:1;
+}
+
+.project__row{
+  font-size:.88rem;
+  color:var(--muted);
+}
+
+.project__row b{
+  color:var(--text);
+  font-weight:600;
+}
+
+.project__tags{
+  display:flex;
+  flex-wrap:wrap;
+  gap:6px;
+}
+
+.project__links{
+  display:flex;
+  gap:10px;
+
+  margin-top:auto;
+  padding-top:6px;
+}
+
+.project__links a{
+  font-size:.86rem;
+
+  font-weight:600;
+
+  color:var(--accent);
+
+  display:inline-flex;
+  align-items:center;
+  gap:6px;
+}
+
+.project__links a:hover{
+  text-decoration:underline;
+}
+
+
+/* =========================================================
+   10. CREATIVE GALLERY
+   ========================================================= */
+
+.gallery{
+  grid-template-columns:
+    repeat(
+      auto-fill,
+      minmax(280px,1fr)
+    );
+}
+
+.shot{
+  position:relative;
+
+  border-radius:12px;
+
+  overflow:hidden;
+
+  border:1px solid var(--border);
+
+  background:var(--surface);
+
+  box-shadow:var(--shadow);
+
+  transition:
+    transform .25s ease,
+    box-shadow .25s ease;
+}
+
+.shot:hover{
+  transform:translateY(-4px);
+  box-shadow:var(--shadow-lg);
+}
+
+.shot__media{
+  aspect-ratio:4/5;
+
+  display:grid;
+  place-items:center;
+
+  text-align:center;
+
+  padding:18px;
+
+  background:
+    repeating-linear-gradient(
+      45deg,
+      var(--surface-2) 0 14px,
+      var(--surface) 14px 28px
+    );
+}
+
+.shot--wide{
+  grid-column:span 2;
+}
+
+.shot--wide .shot__media{
+  aspect-ratio:16/10;
+}
+
+.shot__cap{
+  padding:16px 18px;
+
+  border-top:1px solid var(--border);
+}
+
+.shot__cap strong{
+  display:block;
+
+  font-size:.95rem;
+}
+
+.shot__cap span{
+  font-size:.83rem;
+
+  color:var(--muted);
+}
+
+
+/* =========================================================
+   11. CERTIFICATIONS
+   ========================================================= */
+
+.certs{
+  grid-template-columns:
+    repeat(
+      auto-fill,
+      minmax(280px,1fr)
+    );
+}
+
+.cert dl{
+  display:grid;
+
+  grid-template-columns:auto 1fr;
+
+  gap:4px 12px;
+
+  margin:14px 0 0;
+
+  font-size:.87rem;
+}
+
+.cert dt{
+  color:var(--muted);
+}
+
+.cert dd{
+  margin:0;
+}
+
+
+/* =========================================================
+   12. TESTIMONIALS
+   ========================================================= */
+
+.tests{
+  grid-template-columns:
+    repeat(
+      auto-fit,
+      minmax(290px,1fr)
+    );
+}
+
+.test blockquote{
+  margin:0;
+
+  color:var(--muted);
+
+  font-size:.95rem;
+}
+
+.test__who{
+  display:flex;
+
+  align-items:center;
+
+  gap:12px;
+
+  margin-top:20px;
+
+  padding-top:18px;
+
+  border-top:1px solid var(--border);
+}
+
+.avatar{
+  width:46px;
+  height:46px;
+
+  border-radius:50%;
+
+  flex:none;
+
+  display:grid;
+  place-items:center;
+
+  border:1px dashed var(--border);
+
+  background:var(--surface-2);
+
+  font-size:.6rem;
+
+  color:var(--muted);
+
+  text-align:center;
+}
+
+
+/* =========================================================
+   13. CONTACT
+   ========================================================= */
+
+.contact__grid{
+  display:grid;
+
+  grid-template-columns:
+    1.1fr .9fr;
+
+  gap:48px;
+
+  align-items:start;
+}
+
+.field{
+  display:grid;
+
+  gap:6px;
+
+  margin-bottom:16px;
+}
+
+.field label{
+  font-size:.85rem;
+  font-weight:600;
+}
+
+.field input,
+.field textarea{
+  width:100%;
+
+  padding:12px 14px;
+
+  border-radius:8px;
+
+  border:1px solid var(--border);
+
+  background:var(--surface);
+
+  color:var(--text);
+
+  font:inherit;
+
+  font-size:.94rem;
+
+  transition:border-color .2s ease;
+}
+
+.field input::placeholder,
+.field textarea::placeholder{
+  color:var(--muted);
+
+  opacity:.8;
+}
+
+.field input:focus,
+.field textarea:focus{
+  border-color:var(--accent);
+
+  outline:none;
+
+  box-shadow:
+    0 0 0 3px var(--accent-soft);
+}
+
+.field textarea{
+  min-height:140px;
+
+  resize:vertical;
+}
+
+.error{
+  color:#c0392b;
+
+  font-size:.8rem;
+
+  min-height:1em;
+}
+
+[data-theme="dark"] .error{
+  color:#ff8a7a;
+}
+
+.field input[aria-invalid="true"],
+.field textarea[aria-invalid="true"]{
+  border-color:#c0392b;
+}
+
+.form-note{
+  margin-top:14px;
+
+  font-size:.83rem;
+
+  color:var(--muted);
+
+  background:var(--surface-2);
+
+  border:1px solid var(--border);
+
+  border-left:3px solid var(--accent);
+
+  border-radius:8px;
+
+  padding:12px 14px;
+}
+
+.contact-list li{
+  display:flex;
+
+  gap:14px;
+
+  padding:16px 0;
+
+  border-bottom:1px solid var(--border);
+}
+
+.contact-list li:last-child{
+  border-bottom:none;
+}
+
+.contact-list strong{
+  display:block;
+
+  font-size:.78rem;
+
+  letter-spacing:.1em;
+
+  text-transform:uppercase;
+
+  color:var(--muted);
+}
+
+
+/* =========================================================
+   14. CTA
+   ========================================================= */
+
+.cta{
+  border:1px solid var(--border);
+
+  border-radius:14px;
+
+  background:var(--surface-2);
+
+  padding:
+    clamp(
+      32px,
+      5vw,
+      56px
+    );
+
+  text-align:center;
+}
+
+.cta p{
+  max-width:64ch;
+
+  margin:14px auto 26px;
+
+  color:var(--muted);
+}
+
+.cta__actions{
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:12px;
+
+  justify-content:center;
+}
+
+
+/* =========================================================
+   15. FOOTER
+   ========================================================= */
+
+.footer{
+  border-top:1px solid var(--border);
+
+  padding:40px 0;
+
+  background:var(--surface-2);
+}
+
+.footer__inner{
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:20px;
+
+  justify-content:space-between;
+
+  align-items:center;
+}
+
+.footer__nav{
+  display:flex;
+
+  flex-wrap:wrap;
+
+  gap:16px;
+
+  font-size:.88rem;
+
+  color:var(--muted);
+}
+
+.footer__nav a:hover{
+  color:var(--accent);
+}
+
+
+/* =========================================================
+   16. BACK TO TOP
+   ========================================================= */
+
+.to-top{
+  position:fixed;
+
+  right:20px;
+  bottom:20px;
+
+  z-index:90;
+
+  opacity:0;
+  visibility:hidden;
+
+  transform:translateY(8px);
+
+  transition:
+    opacity .25s ease,
+    transform .25s ease,
+    visibility .25s;
+
+  box-shadow:var(--shadow-lg);
+}
+
+.to-top.is-visible{
+  opacity:1;
+
+  visibility:visible;
+
+  transform:none;
+}
+
+
+/* =========================================================
+   17. RESPONSIVE
+   ========================================================= */
+
+@media (max-width:980px){
+
+  .hero__grid,
+  .about__grid,
+  .contact__grid{
+    grid-template-columns:1fr;
+  }
+
+  .hero__grid{
+    gap:40px;
+  }
+
+  .photo{
+    max-width:340px;
+  }
+
+  .shot--wide{
+    grid-column:span 1;
+  }
+}
+
+
+@media (max-width:820px){
+
+  .nav__links{
+    display:none;
+  }
+
+  .nav__toggle{
+    display:grid;
+  }
+
+  .nav__mobile.is-open{
+    display:block;
+  }
+
+  .section{
+    padding:64px 0;
+  }
+
+  .hero{
+    padding:48px 0 64px;
+  }
+
+  /*
+   * Mobile screenshot vibe:
+   * Profile image appears before the name.
+   */
+
+  .hero__grid{
+    display:flex;
+    flex-direction:column;
+    gap:34px;
+  }
+
+  .hero__grid > div{
+    order:2;
+  }
+
+  .hero__grid > .photo{
+    order:1;
+  }
+
+  .photo{
+    width:100%;
+    max-width:none;
+
+    aspect-ratio:16/7;
+
+    border-radius:0 0 14px 14px;
+
+    padding:18px;
+  }
+
+  .photo::after{
+    inset:10px;
+  }
+
+  .hero h1{
+    font-size:
+      clamp(
+        2.5rem,
+        11vw,
+        3.5rem
+      );
+  }
+
+  .hero__role{
+    font-size:1.03rem;
+    line-height:1.6;
+  }
+
+  .hero__sub{
+    font-size:1rem;
+    line-height:1.7;
+  }
+}
+
+
+@media (max-width:480px){
+
+  .container{
+    padding-inline:18px;
+  }
+
+  .nav__inner{
+    height:64px;
+  }
+
+  .brand{
+    font-size:.95rem;
+  }
+
+  .brand__mark{
+    width:34px;
+    height:34px;
+  }
+
+  .btn{
+    width:100%;
+  }
+
+  .hero__actions{
+    flex-direction:column;
+    align-items:stretch;
+  }
+
+  .hero{
+    padding-top:32px;
+  }
+
+  .hero h1{
+    font-size:2.55rem;
+  }
+
+  .photo{
+    aspect-ratio:16/8;
+  }
+
+  .section{
+    padding:56px 0;
+  }
+
+  .section--tight{
+    padding:48px 0;
+  }
+}
+
+
+/* =========================================================
+   18. REDUCED MOTION
+   ========================================================= */
+
+@media (prefers-reduced-motion:reduce){
+
+  html{
+    scroll-behavior:auto;
+  }
+
+  *,
+  *::before,
+  *::after{
+    animation-duration:.001ms!important;
+    transition-duration:.001ms!important;
+  }
+
+  .card:hover,
+  .shot:hover,
+  .btn:hover{
+    transform:none;
+  }
+}
+</style>
+</head>
+
+<body>
+
+<a class="skip-link" href="#main">
+  Skip to main content
+</a>
+
+
+<!-- =========================================================
+     NAVIGATION
+     ========================================================= -->
+
+<header class="nav">
+
+  <div class="container nav__inner">
+
+    <a class="brand" href="#home">
+
+      <span
+        class="brand__mark"
+        aria-hidden="true"
+      >
+        YN
+      </span>
+
+      [YOUR NAME]
+
+    </a>
+
+
+    <nav
+      class="nav__links"
+      id="primary-nav"
+      aria-label="Primary"
+    >
+
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+
+    </nav>
+
+
+    <div class="nav__actions">
+
+      <button
+        class="icon-btn"
+        id="themeToggle"
+        type="button"
+        aria-label="Switch color theme"
+        aria-pressed="false"
+      >
+
+        <svg
+          class="icon sun"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <circle
+            cx="12"
+            cy="12"
+            r="4"
+          />
+
+          <path
+            d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"
+          />
+        </svg>
+
+
+        <svg
+          class="icon moon"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path
+            d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"
+          />
+        </svg>
+
+      </button>
+
+
+      <button
+        class="icon-btn nav__toggle"
+        id="navToggle"
+        type="button"
+        aria-label="Open navigation menu"
+        aria-expanded="false"
+        aria-controls="mobileNav"
+      >
+
+        <svg
+          class="icon"
+          viewBox="0 0 24 24"
+          aria-hidden="true"
+        >
+          <path d="M3 6h18M3 12h18M3 18h18" />
+        </svg>
+
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <div class="container">
+
+    <nav
+      class="nav__mobile"
+      id="mobileNav"
+      aria-label="Mobile"
+    >
+
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#certifications">Certifications</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<main id="main">
+
+
+<!-- =========================================================
+     HERO
+     ========================================================= -->
+
+<section
+  class="hero"
+  id="home"
+>
+
+  <div class="container hero__grid">
+
+
+    <div>
+
+      <p class="eyebrow">
+        Remote Professional · Operations &amp; Visual Content
+      </p>
+
+
+      <h1>
+        [YOUR NAME]
+      </h1>
+
+
+      <p class="hero__role">
+        Customer Support | AI Data Annotation &amp; Evaluation | E-commerce Operations | Content Management | Mobile Photography &amp; Videography
+      </p>
+
+
+      <p class="hero__sub">
+        I help businesses deliver exceptional customer experiences, maintain high-quality AI datasets, manage e-commerce operations efficiently, produce accurate digital content, and create compelling mobile photography and videography that strengthens brand presence and customer engagement.
+      </p>
+
+
+      <div class="hero__actions">
+
+
+        <a
+          class="btn btn--primary"
+          href="resume.pdf"
+          download
+        >
+
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path d="M12 3v12m0 0 4-4m-4 4-4-4M4 19h16" />
+          </svg>
+
+          Download Resume
+
+        </a>
+
+
+        <a
+          class="btn"
+          href="#contact"
+        >
+
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path d="M4 5h16v14H4z" />
+            <path d="m4 6 8 6 8-6" />
+          </svg>
+
+          Contact Me
+
+        </a>
+
+
+        <a
+          class="btn btn--ghost"
+          href="https://linkedin.com/in/yourusername"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path d="M4.5 9v10M4.5 5.5v.01M10 19v-5.5a2.5 2.5 0 0 1 5 0V19" />
+            <rect
+              x="2.5"
+              y="2.5"
+              width="19"
+              height="19"
+              rx="3"
+            />
+          </svg>
+
+          LinkedIn
+
+        </a>
+
+
+        <a
+          class="btn btn--ghost"
+          href="mailto:your@email.com"
+        >
+
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <rect
+              x="3"
+              y="5"
+              width="18"
+              height="14"
+              rx="2"
+            />
+
+            <path d="m3 7 9 6 9-6" />
+          </svg>
+
+          Email
+
+        </a>
+
+      </div>
+
+
+      <div class="hero__meta">
+
+        <span>
+
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z" />
+            <circle
+              cx="12"
+              cy="10"
+              r="2.5"
+            />
+          </svg>
+
+          [LOCATION — e.g. Lagos, Nigeria]
+
+        </span>
+
+
+        <span>
+
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <circle
+              cx="12"
+              cy="12"
+              r="9"
+            />
+
+            <path d="M12 7v5l3 2" />
+          </svg>
+
+          Available for remote roles &amp; contracts
+
+        </span>
+
+      </div>
+
+    </div>
+
+
+    <figure
+      class="photo"
+      style="margin:0"
+    >
+
+      <img
+        src="https://markethub.com.ng/wp/wp-content/uploads/2026/05/1-7.jpg"
+        alt="Professional headshot of [YOUR NAME] — replace this placeholder with your own photo"
+        hidden
+      />
+
+      <figcaption class="photo__label">
+
+        [PROFILE PHOTO]
+
+        <br />
+
+        <span class="small">
+          Replace with your photo (portrait, 4:5)
+        </span>
+
+      </figcaption>
+
+    </figure>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     ABOUT
+     ========================================================= -->
+
+<section
+  class="section"
+  id="about"
+>
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <p class="eyebrow">
+        Profile
+      </p>
+
+      <h2>
+        About Me
+      </h2>
+
+    </div>
+
+
+    <div class="about__grid">
+
+
+      <div class="about">
+
+        <p>
+          I work at the point where customer experience, data quality and day-to-day operations meet. Most of my work involves handling real customer conversations, checking that information is correct before it goes out, and keeping the systems behind an online business running without noise.
+        </p>
+
+
+        <p>
+          On the data side, I annotate, label and evaluate content against written guidelines. Reading them closely, applying them consistently, and flagging the edge cases instead of guessing. The same habit carries into e-commerce work: accurate listings, clean product copy, orders that get processed and tracked properly, and issues resolved before a customer has to follow up twice.
+        </p>
+
+
+        <p>
+          I write clearly, document what I do, and work well without supervision which matters in a remote team across time zones. I'm comfortable learning a new tool or workflow quickly and adapting when priorities shift.
+        </p>
+
+
+        <p>
+          Alongside this, I shoot and edit product and lifestyle content on mobile. It's not a separate career: knowing how a product is presented visually makes me better at writing about it, listing it, and supporting the customers who buy it.
+        </p>
+
+      </div>
+
+
+      <div
+        class="highlights"
+        aria-label="Focus areas"
+      >
+
+        <div class="highlight">
+          <strong>Customer Support</strong>
+          <span>[Add your focus — e.g. email, chat, WhatsApp]</span>
+        </div>
+
+        <div class="highlight">
+          <strong>AI / Data Quality</strong>
+          <span>[Add your focus — e.g. annotation, evaluation]</span>
+        </div>
+
+        <div class="highlight">
+          <strong>E-commerce Operations</strong>
+          <span>[Add your focus — e.g. WooCommerce, listings]</span>
+        </div>
+
+        <div class="highlight">
+          <strong>Content Management</strong>
+          <span>[Add your focus — e.g. editing, proofreading]</span>
+        </div>
+
+        <div class="highlight">
+          <strong>Creative Visual Content</strong>
+          <span>[Add your focus — e.g. product photo &amp; video]</span>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     CORE COMPETENCIES
+     ========================================================= -->
+
+<section
+  class="section"
+  id="skills"
+>
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <p class="eyebrow">
+        Capabilities
+      </p>
+
+      <h2>
+        Core Competencies
+      </h2>
+
+      <p>
+        Grouped by discipline. Expand a category to see the detail.
+      </p>
+
+    </div>
+
+
+    <div
+      class="accordion"
+      id="competencies"
+    >
+
+
+      <div class="acc">
+
+        <h3>
+
+          <button
+            class="acc__btn"
+            type="button"
+            aria-expanded="true"
+            aria-controls="p1"
+          >
+
+            Customer Support
+
+            <svg
+              class="icon chev"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+
+          </button>
+
+        </h3>
+
+
+        <div
+          class="acc__panel"
+          id="p1"
+        >
+
+          <span class="tag">Email Support</span>
+          <span class="tag">Live Chat Support</span>
+          <span class="tag">Social Media Support</span>
+          <span class="tag">WhatsApp Customer Support</span>
+          <span class="tag">Customer Communication</span>
+          <span class="tag">Order Tracking</span>
+          <span class="tag">Complaint Resolution</span>
+          <span class="tag">Customer Satisfaction</span>
+          <span class="tag">Escalation Handling</span>
+          <span class="tag">Professional Written Communication</span>
+
+        </div>
+
+      </div>
+
+
+      <div class="acc">
+
+        <h3>
+
+          <button
+            class="acc__btn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="p2"
+          >
+
+            AI Data Annotation &amp; Evaluation
+
+            <svg
+              class="icon chev"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+
+          </button>
+
+        </h3>
+
+
+        <div
+          class="acc__panel"
+          id="p2"
+          hidden
+        >
+
+          <span class="tag">Data Annotation</span>
+          <span class="tag">AI Response Evaluation</span>
+          <span class="tag">Prompt Evaluation</span>
+          <span class="tag">Data Labeling</span>
+          <span class="tag">Content Categorization</span>
+          <span class="tag">Content Moderation</span>
+          <span class="tag">Quality Assurance</span>
+          <span class="tag">AI Training Support</span>
+          <span class="tag">Guideline Compliance</span>
+          <span class="tag">Accuracy Verification</span>
+
+        </div>
+
+      </div>
+
+
+      <div class="acc">
+
+        <h3>
+
+          <button
+            class="acc__btn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="p3"
+          >
+
+            E-commerce Operations
+
+            <svg
+              class="icon chev"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+
+          </button>
+
+        </h3>
+
+
+        <div
+          class="acc__panel"
+          id="p3"
+          hidden
+        >
+
+          <span class="tag">Product Research</span>
+          <span class="tag">Product Listing</span>
+          <span class="tag">Product Description Writing</span>
+          <span class="tag">WooCommerce Management</span>
+          <span class="tag">Inventory Coordination</span>
+          <span class="tag">Order Processing</span>
+          <span class="tag">Marketplace Operations</span>
+          <span class="tag">Shipping Coordination</span>
+          <span class="tag">Payment Verification</span>
+          <span class="tag">Operational Support</span>
+
+        </div>
+
+      </div>
+
+
+      <div class="acc">
+
+        <h3>
+
+          <button
+            class="acc__btn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="p4"
+          >
+
+            Content Management
+
+            <svg
+              class="icon chev"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+
+          </button>
+
+        </h3>
+
+
+        <div
+          class="acc__panel"
+          id="p4"
+          hidden
+        >
+
+          <span class="tag">Content Editing</span>
+          <span class="tag">Copy Editing</span>
+          <span class="tag">Proofreading</span>
+          <span class="tag">Product Copywriting</span>
+          <span class="tag">Content Review</span>
+          <span class="tag">Content Rewriting</span>
+          <span class="tag">SEO-Friendly Product Content</span>
+          <span class="tag">Quality Control</span>
+
+        </div>
+
+      </div>
+
+
+      <div class="acc">
+
+        <h3>
+
+          <button
+            class="acc__btn"
+            type="button"
+            aria-expanded="false"
+            aria-controls="p5"
+          >
+
+            Mobile Photography &amp; Videography
+
+            <svg
+              class="icon chev"
+              viewBox="0 0 24 24"
+              aria-hidden="true"
+            >
+              <path d="m6 9 6 6 6-6" />
+            </svg>
+
+          </button>
+
+        </h3>
+
+
+        <div
+          class="acc__panel"
+          id="p5"
+          hidden
+        >
+
+          <span class="tag">Mobile Photography</span>
+          <span class="tag">Mobile Videography</span>
+          <span class="tag">Product Photography</span>
+          <span class="tag">Product Videography</span>
+          <span class="tag">Lifestyle Product Photography</span>
+          <span class="tag">Lifestyle Product Videography</span>
+          <span class="tag">Social Media Content Creation</span>
+          <span class="tag">Composition &amp; Framing</span>
+          <span class="tag">Natural &amp; Artificial Lighting</span>
+          <span class="tag">Camera Settings Optimization</span>
+          <span class="tag">Visual Storytelling</span>
+          <span class="tag">Creative Direction</span>
+          <span class="tag">Product Styling</span>
+          <span class="tag">Short-form Video Production</span>
+          <span class="tag">Reels</span>
+          <span class="tag">Shorts</span>
+          <span class="tag">TikTok Content</span>
+          <span class="tag">Promotional Content</span>
+          <span class="tag">Mobile Photo Editing</span>
+          <span class="tag">Mobile Video Editing</span>
+          <span class="tag">Image Enhancement &amp; Optimization</span>
+          <span class="tag">Brand-Focused Visual Content</span>
+          <span class="tag">Content Planning</span>
+          <span class="tag">Attention to Visual Detail</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     TECHNICAL SKILLS
+     ========================================================= -->
+
+<section class="section">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <p class="eyebrow">
+        Toolkit
+      </p>
+
+      <h2>
+        Technical Skills
+      </h2>
+
+      <p>
+        Working proficiency. Edit the level labels below to match your own experience.
+      </p>
+
+    </div>
+
+
+    <div
+      class="grid"
+      style="grid-template-columns:repeat(auto-fill,minmax(200px,1fr))"
+    >
+
+      <div class="card">
+        <h3>HTML</h3>
+        <p class="small muted">[LEVEL — e.g. Advanced]</p>
+      </div>
+
+      <div class="card">
+        <h3>CSS</h3>
+        <p class="small muted">[LEVEL — e.g. Advanced]</p>
+      </div>
+
+      <div class="card">
+        <h3>JavaScript</h3>
+        <p class="small muted">[LEVEL — e.g. Intermediate]</p>
+      </div>
+
+      <div class="card">
+        <h3>React</h3>
+        <p class="small muted">[LEVEL — e.g. Intermediate]</p>
+      </div>
+
+      <div class="card">
+        <h3>WordPress</h3>
+        <p class="small muted">[LEVEL]</p>
+      </div>
+
+      <div class="card">
+        <h3>WooCommerce</h3>
+        <p class="small muted">[LEVEL]</p>
+      </div>
+
+      <div class="card">
+        <h3>Elementor</h3>
+        <p class="small muted">[LEVEL]</p>
+      </div>
+
+      <div class="card">
+        <h3>Git</h3>
+        <p class="small muted">[LEVEL]</p>
+      </div>
+
+      <div class="card">
+        <h3>GitHub</h3>
+        <p class="small muted">[LEVEL]</p>
+      </div>
+
+      <div class="card">
+        <h3>Microsoft Office</h3>
+        <p class="small muted">[LEVEL]</p>
+      </div>
+
+      <div class="card">
+        <h3>Google Workspace</h3>
+        <p class="small muted">[LEVEL]</p>
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     PROFESSIONAL SKILLS
+     ========================================================= -->
+
+<section class="section section--tight">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <p class="eyebrow">
+        Working Style
+      </p>
+
+      <h2>
+        Professional Skills
+      </h2>
+
+    </div>
+
+
+    <div class="tools">
+
+      <span class="tag">Communication</span>
+      <span class="tag">Problem Solving</span>
+      <span class="tag">Attention to Detail</span>
+      <span class="tag">Time Management</span>
+      <span class="tag">Critical Thinking</span>
+      <span class="tag">Team Collaboration</span>
+      <span class="tag">Adaptability</span>
+      <span class="tag">Documentation</span>
+      <span class="tag">Multitasking</span>
+      <span class="tag">Organization</span>
+      <span class="tag">Analytical Thinking</span>
+      <span class="tag">Customer-Centric Mindset</span>
+      <span class="tag">Creativity</span>
+      <span class="tag">Visual Communication</span>
+      <span class="tag">Brand Awareness</span>
+      <span class="tag">Storytelling</span>
+      <span class="tag">Content Planning</span>
+      <span class="tag">Creative Problem Solving</span>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     EXPERIENCE
+     ========================================================= -->
+
+<section
+  class="section"
+  id="experience"
+>
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <p class="eyebrow">
+        Career
+      </p>
+
+      <h2>
+        Experience
+      </h2>
+
+      <p>
+        Replace the bracketed placeholders below with your real roles.
+      </p>
+
+    </div>
+
+
+    <div class="timeline">
+
+
+      <article class="tl-item">
+
+        <div class="tl-head">
+
+          <h3>
+            [POSITION]
+          </h3>
+
+          <span class="small muted">
+            [DURATION]
+          </span>
+
+        </div>
+
+
+        <p class="tl-sub">
+          [COMPANY]
+        </p>
+
+
+        <div class="tl-list">
+
+          <h4>
+            Responsibilities
+          </h4>
+
+          <ul>
+            <li>[Responsibility]</li>
+            <li>[Responsibility]</li>
+            <li>[Responsibility]</li>
+          </ul>
+
+        </div>
+
+
+        <div class="tl-list">
+
+          <h4>
+            Key Achievements
+          </h4>
+
+          <ul>
+            <li>[Achievement]</li>
+            <li>[Achievement]</li>
+          </ul>
+
+        </div>
+
+      </article>
+
+
+      <article class="tl-item">
+
+        <div class="tl-head">
+
+          <h3>
+            [POSITION]
+          </h3>
+
+          <span class="small muted">
+            [DURATION]
+          </span>
+
+        </div>
+
+
+        <p class="tl-sub">
+          [COMPANY]
+        </p>
+
+
+        <div class="tl-list">
+
+          <h4>
+            Responsibilities
+          </h4>
+
+          <ul>
+            <li>[Responsibility]</li>
+            <li>[Responsibility]</li>
+            <li>[Responsibility]</li>
+          </ul>
+
+        </div>
+
+
+        <div class="tl-list">
+
+          <h4>
+            Key Achievements
+          </h4>
+
+          <ul>
+            <li>[Achievement]</li>
+            <li>[Achievement]</li>
+          </ul>
+
+        </div>
+
+      </article>
+
+
+      <article class="tl-item">
+
+        <div class="tl-head">
+
+          <h3>
+            [POSITION]
+          </h3>
+
+          <span class="small muted">
+            [DURATION]
+          </span>
+
+        </div>
+
+
+        <p class="tl-sub">
+          [COMPANY]
+        </p>
+
+
+        <div class="tl-list">
+
+          <h4>
+            Responsibilities
+          </h4>
+
+          <ul>
+            <li>[Responsibility]</li>
+            <li>[Responsibility]</li>
+            <li>[Responsibility]</li>
+          </ul>
+
+        </div>
+
+
+        <div class="tl-list">
+
+          <h4>
+            Key Achievements
+          </h4>
+
+          <ul>
+            <li>[Achievement]</li>
+            <li>[Achievement]</li>
+          </ul>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     FEATURED PROJECTS
+     ========================================================= -->
+
+<section
+  class="section"
+  id="projects"
+>
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <p class="eyebrow">
+        Selected Work
+      </p>
+
+      <h2>
+        Featured Projects
+      </h2>
+
+      <p>
+        Filter by category. Each card is an editable placeholder — swap in your own images, links and outcomes.
+      </p>
+
+    </div>
+
+
+    <div
+      class="filters"
+      role="tablist"
+      aria-label="Project categories"
+    >
+
+      <button
+        class="filter is-active"
+        data-filter="all"
+        type="button"
+      >
+        All
+      </button>
+
+      <button
+        class="filter"
+        data-filter="support"
+        type="button"
+      >
+        Customer Support
+      </button>
+
+      <button
+        class="filter"
+        data-filter="ai"
+        type="button"
+      >
+        AI Data Annotation
+      </button>
+
+      <button
+        class="filter"
+        data-filter="ecommerce"
+        type="button"
+      >
+        E-commerce
+      </button>
+
+      <button
+        class="filter"
+        data-filter="content"
+        type="button"
+      >
+        Content Management
+      </button>
+
+      <button
+        class="filter"
+        data-filter="photo"
+        type="button"
+      >
+        Mobile Photography
+      </button>
+
+      <button
+        class="filter"
+        data-filter="video"
+        type="button"
+      >
+        Mobile Videography
+      </button>
+
+      <button
+        class="filter"
+        data-filter="product-photo"
+        type="button"
+      >
+        Product Photography
+      </button>
+
+      <button
+        class="filter"
+        data-filter="product-video"
+        type="button"
+      >
+        Product Videography
+      </button>
+
+      <button
+        class="filter"
+        data-filter="social"
+        type="button"
+      >
+        Social Media Content
+      </button>
+
+    </div>
+
+
+    <div
+      class="grid projects"
+      id="projectGrid"
+    >
+
+
+      <article
+        class="card project"
+        data-category="support"
+      >
+
+        <div class="project__img">
+          <span class="placeholder-tag">
+            [PROJECT IMAGE]
+          </span>
+        </div>
+
+
+        <div class="project__body">
+
+          <h3>
+            [PROJECT TITLE] — Customer Support
+          </h3>
+
+          <p class="small muted">
+            [Short description of the support project: channels handled, volume type, scope.]
+          </p>
+
+          <p class="project__row">
+            <b>Skills Used:</b>
+            [Email Support, Escalation Handling]
+          </p>
+
+          <p class="project__row">
+            <b>Technologies:</b>
+            [Helpdesk / Tools]
+          </p>
+
+          <p class="project__row">
+            <b>My Role:</b>
+            [ROLE]
+          </p>
+
+          <p class="project__row">
+            <b>Results:</b>
+            [PROJECT RESULT]
+          </p>
+
+          <div class="project__tags">
+            <span class="tag">Support</span>
+            <span class="tag">Communication</span>
+          </div>
+
+          <div class="project__links">
+
+            <a
+              href="#"
+              aria-label="Live demo for [PROJECT TITLE]"
+            >
+              Live Demo
+            </a>
+
+            <a
+              href="#"
+              aria-label="GitHub repository for [PROJECT TITLE]"
+            >
+              GitHub
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <article
+        class="card project"
+        data-category="ai"
+      >
+
+        <div class="project__img">
+          <span class="placeholder-tag">
+            [PROJECT IMAGE]
+          </span>
+        </div>
+
+
+        <div class="project__body">
+
+          <h3>
+            [PROJECT TITLE] — AI Data Annotation
+          </h3>
+
+          <p class="small muted">
+            [Short description: annotation task type, guideline complexity, evaluation criteria.]
+          </p>
+
+          <p class="project__row">
+            <b>Skills Used:</b>
+            [Data Labeling, Response Evaluation]
+          </p>
+
+          <p class="project__row">
+            <b>Technologies:</b>
+            [Annotation Platform]
+          </p>
+
+          <p class="project__row">
+            <b>My Role:</b>
+            [ROLE]
+          </p>
+
+          <p class="project__row">
+            <b>Results:</b>
+            [PROJECT RESULT]
+          </p>
+
+          <div class="project__tags">
+            <span class="tag">AI Data</span>
+            <span class="tag">Quality Assurance</span>
+          </div>
+
+          <div class="project__links">
+
+            <a href="#">
+              Live Demo
+            </a>
+
+            <a href="#">
+              GitHub
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <article
+        class="card project"
+        data-category="ecommerce"
+      >
+
+        <div class="project__img">
+          <span class="placeholder-tag">
+            [PROJECT IMAGE]
+          </span>
+        </div>
+
+
+        <div class="project__body">
+
+          <h3>
+            [PROJECT TITLE] — E-commerce Operations
+          </h3>
+
+          <p class="small muted">
+            [Short description: store type, catalogue size, operational scope.]
+          </p>
+
+          <p class="project__row">
+            <b>Skills Used:</b>
+            [Product Listing, Order Processing]
+          </p>
+
+          <p class="project__row">
+            <b>Technologies:</b>
+            [WooCommerce, WordPress]
+          </p>
+
+          <p class="project__row">
+            <b>My Role:</b>
+            [ROLE]
+          </p>
+
+          <p class="project__row">
+            <b>Results:</b>
+            [PROJECT RESULT]
+          </p>
+
+          <div class="project__tags">
+            <span class="tag">WooCommerce</span>
+            <span class="tag">Operations</span>
+          </div>
+
+          <div class="project__links">
+
+            <a href="#">
+              Live Demo
+            </a>
+
+            <a href="#">
+              GitHub
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <article
+        class="card project"
+        data-category="content"
+      >
+
+        <div class="project__img">
+          <span class="placeholder-tag">
+            [PROJECT IMAGE]
+          </span>
+        </div>
+
+
+        <div class="project__body">
+
+          <h3>
+            [PROJECT TITLE] — Content Management
+          </h3>
+
+          <p class="small muted">
+            [Short description: content type, editorial standards, review workflow.]
+          </p>
+
+          <p class="project__row">
+            <b>Skills Used:</b>
+            [Copy Editing, Proofreading]
+          </p>
+
+          <p class="project__row">
+            <b>Technologies:</b>
+            [CMS / Docs]
+          </p>
+
+          <p class="project__row">
+            <b>My Role:</b>
+            [ROLE]
+          </p>
+
+          <p class="project__row">
+            <b>Results:</b>
+            [PROJECT RESULT]
+          </p>
+
+          <div class="project__tags">
+            <span class="tag">Editing</span>
+            <span class="tag">SEO Copy</span>
+          </div>
+
+          <div class="project__links">
+
+            <a href="#">
+              Live Demo
+            </a>
+
+            <a href="#">
+              GitHub
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <article
+        class="card project"
+        data-category="photo product-photo"
+      >
+
+        <div
+          class="project__img"
+          style="aspect-ratio:4/3"
+        >
+          <span class="placeholder-tag">
+            [PHOTOGRAPHY IMAGE]
+          </span>
+        </div>
+
+
+        <div class="project__body">
+
+          <h3>
+            [PROJECT TITLE] — Mobile / Product Photography
+          </h3>
+
+          <p class="small muted">
+            [Short description: product type, styling approach, lighting setup.]
+          </p>
+
+          <p class="project__row">
+            <b>Skills Used:</b>
+            [Composition, Lighting, Styling]
+          </p>
+
+          <p class="project__row">
+            <b>Technologies:</b>
+            [Phone model, editing app]
+          </p>
+
+          <p class="project__row">
+            <b>My Role:</b>
+            [Photographer / Creative Direction]
+          </p>
+
+          <p class="project__row">
+            <b>Results:</b>
+            [PROJECT RESULT]
+          </p>
+
+          <div class="project__tags">
+            <span class="tag">Photography</span>
+            <span class="tag">Product</span>
+          </div>
+
+          <div class="project__links">
+
+            <a href="#">
+              Live Demo
+            </a>
+
+            <a href="#">
+              GitHub
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <article
+        class="card project"
+        data-category="video product-video"
+      >
+
+        <div
+          class="project__img"
+          style="aspect-ratio:4/3"
+        >
+          <span class="placeholder-tag">
+            [VIDEO COVER FRAME]
+          </span>
+        </div>
+
+
+        <div class="project__body">
+
+          <h3>
+            [PROJECT TITLE] — Mobile / Product Videography
+          </h3>
+
+          <p class="small muted">
+            [Short description: format, length, platform, narrative.]
+          </p>
+
+          <p class="project__row">
+            <b>Skills Used:</b>
+            [Short-form Video, Editing]
+          </p>
+
+          <p class="project__row">
+            <b>Technologies:</b>
+            [Phone model, editing app]
+          </p>
+
+          <p class="project__row">
+            <b>My Role:</b>
+            [Shooter / Editor]
+          </p>
+
+          <p class="project__row">
+            <b>Results:</b>
+            [PROJECT RESULT]
+          </p>
+
+          <div class="project__tags">
+            <span class="tag">Videography</span>
+            <span class="tag">Reels</span>
+          </div>
+
+          <div class="project__links">
+
+            <a href="#">
+              Live Demo
+            </a>
+
+            <a href="#">
+              GitHub
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <article
+        class="card project"
+        data-category="social"
+      >
+
+        <div
+          class="project__img"
+          style="aspect-ratio:4/3"
+        >
+          <span class="placeholder-tag">
+            [SOCIAL CONTENT IMAGE]
+          </span>
+        </div>
+
+
+        <div class="project__body">
+
+          <h3>
+            [PROJECT TITLE] — Social Media Content Creation
+          </h3>
+
+          <p class="small muted">
+            [Short description: campaign goal, content plan, posting cadence.]
+          </p>
+
+          <p class="project__row">
+            <b>Skills Used:</b>
+            [Content Planning, Visual Storytelling]
+          </p>
+
+          <p class="project__row">
+            <b>Technologies:</b>
+            [Platforms / editing apps]
+          </p>
+
+          <p class="project__row">
+            <b>My Role:</b>
+            [Content Creator]
+          </p>
+
+          <p class="project__row">
+            <b>Results:</b>
+            [PROJECT RESULT]
+          </p>
+
+          <div class="project__tags">
+            <span class="tag">Social</span>
+            <span class="tag">Brand Visuals</span>
+          </div>
+
+          <div class="project__links">
+
+            <a href="#">
+              Live Demo
+            </a>
+
+            <a href="#">
+              GitHub
+            </a>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     CREATIVE PORTFOLIO
+     ========================================================= -->
+
+<section
+  class="section"
+  id="creative"
+>
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <p class="eyebrow">
+        Visual Work
+      </p>
+
+      <h2>
+        Creative Portfolio — Mobile Photography &amp; Videography
+      </h2>
+
+      <p>
+        Commercial visuals shot and edited on mobile. Replace each placeholder with your own image or video cover frame.
+      </p>
+
+    </div>
+
+
+    <div class="grid gallery">
+
+
+      <figure
+        class="shot"
+        style="margin:0"
+      >
+
+        <div class="shot__media">
+
+          <span class="placeholder-tag">
+            [PRODUCT PHOTO]
+          </span>
+
+        </div>
+
+        <figcaption class="shot__cap">
+
+          <strong>
+            Product Photography
+          </strong>
+
+          <span>
+            [Client / product] · [Approach, lighting, purpose]
+          </span>
+
+        </figcaption>
+
+      </figure>
+
+
+      <figure
+        class="shot"
+        style="margin:0"
+      >
+
+        <div class="shot__media">
+
+          <span class="placeholder-tag">
+            [LIFESTYLE PHOTO]
+          </span>
+
+        </div>
+
+        <figcaption class="shot__cap">
+
+          <strong>
+            Lifestyle Photography
+          </strong>
+
+          <span>
+            [Client / product] · [In-context styling notes]
+          </span>
+
+        </figcaption>
+
+      </figure>
+
+
+      <figure
+        class="shot"
+        style="margin:0"
+      >
+
+        <div class="shot__media">
+
+          <span class="placeholder-tag">
+            [VIDEO COVER FRAME]
+          </span>
+
+        </div>
+
+        <figcaption class="shot__cap">
+
+          <strong>
+            Product Videography
+          </strong>
+
+          <span>
+            [Format, length, platform]
+          </span>
+
+        </figcaption>
+
+      </figure>
+
+
+      <figure
+        class="shot shot--wide"
+        style="margin:0"
+      >
+
+        <div class="shot__media">
+
+          <span class="placeholder-tag">
+            [SOCIAL MEDIA CONTENT]
+          </span>
+
+        </div>
+
+        <figcaption class="shot__cap">
+
+          <strong>
+            Social Media Content
+          </strong>
+
+          <span>
+            [Campaign, cadence, platforms]
+          </span>
+
+        </figcaption>
+
+      </figure>
+
+
+      <figure
+        class="shot"
+        style="margin:0"
+      >
+
+        <div class="shot__media">
+
+          <span class="placeholder-tag">
+            [PROMOTIONAL CONTENT]
+          </span>
+
+        </div>
+
+        <figcaption class="shot__cap">
+
+          <strong>
+            Promotional Content
+          </strong>
+
+          <span>
+            [Offer, objective, deliverables]
+          </span>
+
+        </figcaption>
+
+      </figure>
+
+
+      <figure
+        class="shot"
+        style="margin:0"
+      >
+
+        <div class="shot__media">
+
+          <span class="placeholder-tag">
+            [BRAND VISUALS]
+          </span>
+
+        </div>
+
+        <figcaption class="shot__cap">
+
+          <strong>
+            Brand Visuals
+          </strong>
+
+          <span>
+            [Brand, visual direction, usage]
+          </span>
+
+        </figcaption>
+
+      </figure>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     CERTIFICATIONS
+     ========================================================= -->
+
+<section
+  class="section"
+  id="certifications"
+>
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <p class="eyebrow">
+        Credentials
+      </p>
+
+      <h2>
+        Certifications
+      </h2>
+
+      <p>
+        Placeholders for current and upcoming certifications.
+      </p>
+
+    </div>
+
+
+    <div class="grid certs">
+
+
+      <article class="card cert">
+
+        <h3>
+          [Certificate Name]
+        </h3>
+
+        <dl>
+
+          <dt>Organization</dt>
+          <dd>[Organization]</dd>
+
+          <dt>Date</dt>
+          <dd>[Date]</dd>
+
+          <dt>Credential ID</dt>
+          <dd>[Credential ID]</dd>
+
+        </dl>
+
+        <p style="margin-top:16px">
+
+          <a
+            class="btn btn--ghost"
+            href="#"
+            aria-label="View [Certificate Name] certificate"
+          >
+            View Certificate
+          </a>
+
+        </p>
+
+      </article>
+
+
+      <article class="card cert">
+
+        <h3>
+          [Certificate Name]
+        </h3>
+
+        <dl>
+
+          <dt>Organization</dt>
+          <dd>[Organization]</dd>
+
+          <dt>Date</dt>
+          <dd>[Date]</dd>
+
+          <dt>Credential ID</dt>
+          <dd>[Credential ID]</dd>
+
+        </dl>
+
+        <p style="margin-top:16px">
+
+          <a
+            class="btn btn--ghost"
+            href="#"
+            aria-label="View [Certificate Name] certificate"
+          >
+            View Certificate
+          </a>
+
+        </p>
+
+      </article>
+
+
+      <article class="card cert">
+
+        <h3>
+          [Certificate Name]
+        </h3>
+
+        <dl>
+
+          <dt>Organization</dt>
+          <dd>[Organization]</dd>
+
+          <dt>Date</dt>
+          <dd>[Date]</dd>
+
+          <dt>Credential ID</dt>
+          <dd>[Credential ID]</dd>
+
+        </dl>
+
+        <p style="margin-top:16px">
+
+          <a
+            class="btn btn--ghost"
+            href="#"
+            aria-label="View [Certificate Name] certificate"
+          >
+            View Certificate
+          </a>
+
+        </p>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     TOOLS & PLATFORMS
+     ========================================================= -->
+
+<section class="section section--tight">
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <p class="eyebrow">
+        Stack
+      </p>
+
+      <h2>
+        Tools &amp; Platforms
+      </h2>
+
+    </div>
+
+
+    <div class="tools">
+
+      <span class="tool">
+        <span class="dot" aria-hidden="true"></span>
+        WordPress
+      </span>
+
+      <span class="tool">
+        <span class="dot" aria-hidden="true"></span>
+        WooCommerce
+      </span>
+
+      <span class="tool">
+        <span class="dot" aria-hidden="true"></span>
+        Elementor
+      </span>
+
+      <span class="tool">
+        <span class="dot" aria-hidden="true"></span>
+        GitHub
+      </span>
+
+      <span class="tool">
+        <span class="dot" aria-hidden="true"></span>
+        Google Docs
+      </span>
+
+      <span class="tool">
+        <span class="dot" aria-hidden="true"></span>
+        Google Sheets
+      </span>
+
+      <span class="tool">
+        <span class="dot" aria-hidden="true"></span>
+        Google Workspace
+      </span>
+
+      <span class="tool">
+        <span class="dot" aria-hidden="true"></span>
+        Microsoft Word
+      </span>
+
+      <span class="tool">
+        <span class="dot" aria-hidden="true"></span>
+        Microsoft Excel
+      </span>
+
+      <span class="tool">
+        <span class="dot" aria-hidden="true"></span>
+        Microsoft Outlook
+      </span>
+
+      <span class="tool">
+        <span class="dot" aria-hidden="true"></span>
+        Gmail
+      </span>
+
+      <span class="tool">
+        <span class="dot" aria-hidden="true"></span>
+        Slack
+      </span>
+
+      <span class="tool">
+        <span class="dot" aria-hidden="true"></span>
+        Zoom
+      </span>
+
+      <span class="tool">
+        <span class="dot" aria-hidden="true"></span>
+        Trello
+      </span>
+
+      <span class="tool">
+        <span class="dot" aria-hidden="true"></span>
+        Notion
+      </span>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     TESTIMONIALS
+     ========================================================= -->
+
+<section
+  class="section"
+  id="testimonials"
+>
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <p class="eyebrow">
+        References
+      </p>
+
+      <h2>
+        Testimonials
+      </h2>
+
+      <p>
+        Placeholder cards — replace with real quotes once you have permission to publish them.
+      </p>
+
+    </div>
+
+
+    <div class="grid tests">
+
+
+      <article class="card test">
+
+        <blockquote>
+          "[TESTIMONIAL TEXT — replace with a real quote from a client, manager or colleague.]"
+        </blockquote>
+
+        <div class="test__who">
+
+          <div
+            class="avatar"
+            aria-hidden="true"
+          >
+            [PHOTO]
+          </div>
+
+          <div>
+
+            <strong>
+              [CLIENT NAME]
+            </strong>
+
+            <div class="small muted">
+              [POSITION] · [COMPANY NAME]
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <article class="card test">
+
+        <blockquote>
+          "[TESTIMONIAL TEXT — replace with a real quote from a client, manager or colleague.]"
+        </blockquote>
+
+        <div class="test__who">
+
+          <div
+            class="avatar"
+            aria-hidden="true"
+          >
+            [PHOTO]
+          </div>
+
+          <div>
+
+            <strong>
+              [CLIENT NAME]
+            </strong>
+
+            <div class="small muted">
+              [POSITION] · [COMPANY NAME]
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+
+      <article class="card test">
+
+        <blockquote>
+          "[TESTIMONIAL TEXT — replace with a real quote from a client, manager or colleague.]"
+        </blockquote>
+
+        <div class="test__who">
+
+          <div
+            class="avatar"
+            aria-hidden="true"
+          >
+            [PHOTO]
+          </div>
+
+          <div>
+
+            <strong>
+              [CLIENT NAME]
+            </strong>
+
+            <div class="small muted">
+              [POSITION] · [COMPANY NAME]
+            </div>
+
+          </div>
+
+        </div>
+
+      </article>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     CONTACT
+     ========================================================= -->
+
+<section
+  class="section"
+  id="contact"
+>
+
+  <div class="container">
+
+    <div class="section-head">
+
+      <p class="eyebrow">
+        Contact
+      </p>
+
+      <h2>
+        Let's Work Together
+      </h2>
+
+      <p>
+        If you're hiring for a remote support, data quality, e-commerce or content role — or you need product visuals for your brand — send a short note about the work and I'll reply with how I can help.
+      </p>
+
+    </div>
+
+
+    <div class="contact__grid">
+
+
+      <form
+        id="contactForm"
+        novalidate
+      >
+
+
+        <div class="field">
+
+          <label for="name">
+            Name
+          </label>
+
+          <input
+            id="name"
+            name="name"
+            type="text"
+            autocomplete="name"
+            placeholder="Your full name"
+            aria-describedby="err-name"
+            required
+          />
+
+          <p
+            class="error"
+            id="err-name"
+            role="alert"
+          ></p>
+
+        </div>
+
+
+        <div class="field">
+
+          <label for="email">
+            Email
+          </label>
+
+          <input
+            id="email"
+            name="email"
+            type="email"
+            autocomplete="email"
+            placeholder="you@company.com"
+            aria-describedby="err-email"
+            required
+          />
+
+          <p
+            class="error"
+            id="err-email"
+            role="alert"
+          ></p>
+
+        </div>
+
+
+        <div class="field">
+
+          <label for="subject">
+            Subject
+          </label>
+
+          <input
+            id="subject"
+            name="subject"
+            type="text"
+            placeholder="What is this about?"
+            aria-describedby="err-subject"
+            required
+          />
+
+          <p
+            class="error"
+            id="err-subject"
+            role="alert"
+          ></p>
+
+        </div>
+
+
+        <div class="field">
+
+          <label for="message">
+            Message
+          </label>
+
+          <textarea
+            id="message"
+            name="message"
+            placeholder="A few lines about the role or project"
+            aria-describedby="err-message"
+            required
+          ></textarea>
+
+          <p
+            class="error"
+            id="err-message"
+            role="alert"
+          ></p>
+
+        </div>
+
+
+        <button
+          class="btn btn--primary"
+          type="submit"
+        >
+
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path d="M4 12h15m0 0-6-6m6 6-6 6" />
+          </svg>
+
+          Send Message
+
+        </button>
+
+
+        <p
+          class="form-note"
+          id="formStatus"
+          role="status"
+        >
+
+          <strong>
+            Not connected yet.
+          </strong>
+
+          This form validates input but has no backend. Open the
+          <code>submitContactForm()</code>
+          function in the script below and connect Formspree, EmailJS, WordPress, or your own endpoint.
+
+        </p>
+
+      </form>
+
+
+      <ul
+        class="contact-list"
+        aria-label="Contact details"
+      >
+
+
+        <li>
+
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <rect
+              x="2.5"
+              y="2.5"
+              width="19"
+              height="19"
+              rx="3"
+            />
+
+            <path d="M4.5 9v10M4.5 5.5v.01M10 19v-5.5a2.5 2.5 0 0 1 5 0V19" />
+          </svg>
+
+          <div>
+
+            <strong>
+              LinkedIn
+            </strong>
+
+            <a
+              href="https://linkedin.com/in/yourusername"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              [LINKEDIN URL]
+            </a>
+
+          </div>
+
+        </li>
+
+
+        <li>
+
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <rect
+              x="3"
+              y="5"
+              width="18"
+              height="14"
+              rx="2"
+            />
+
+            <path d="m3 7 9 6 9-6" />
+          </svg>
+
+          <div>
+
+            <strong>
+              Email
+            </strong>
+
+            <a href="mailto:your@email.com">
+              [YOUR EMAIL]
+            </a>
+
+          </div>
+
+        </li>
+
+
+        <li>
+
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path d="M5 4h4l2 5-2.5 1.5a12 12 0 0 0 5 5L15 13l5 2v4a1 1 0 0 1-1.1 1A16 16 0 0 1 4 5.1 1 1 0 0 1 5 4z" />
+          </svg>
+
+          <div>
+
+            <strong>
+              Phone
+            </strong>
+
+            <a href="tel:+0000000000">
+              [PHONE NUMBER]
+            </a>
+
+          </div>
+
+        </li>
+
+
+        <li>
+
+          <svg
+            class="icon"
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+            <path d="M12 21s7-5.6 7-11a7 7 0 1 0-14 0c0 5.4 7 11 7 11z" />
+
+            <circle
+              cx="12"
+              cy="10"
+              r="2.5"
+            />
+
+          </svg>
+
+          <div>
+
+            <strong>
+              Location
+            </strong>
+
+            <span>
+              [Lagos, Nigeria]
+            </span>
+
+          </div>
+
+        </li>
+
+      </ul>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- =========================================================
+     CTA
+     ========================================================= -->
+
+<section class="section section--tight">
+
+  <div class="container">
+
+    <div class="cta">
+
+      <h2>
+        Looking for a Reliable Remote Professional?
+      </h2>
+
+      <p>
+        Whether you need dependable customer support, accurate AI data evaluation, efficient e-commerce operations, high-quality content management, or creative visual content, let's discuss how I can contribute to your team.
+      </p>
+
+
+      <div class="cta__actions">
+
+        <a
+          class="btn btn--primary"
+          href="#contact"
+        >
+          Contact Me
+        </a>
+
+        <a
+          class="btn"
+          href="#projects"
+        >
+          View Projects
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+     ========================================================= -->
+
+<footer class="footer">
+
+  <div class="container footer__inner">
+
+
+    <div>
+
+      <p>
+        <strong>
+          [YOUR NAME]
+        </strong>
+      </p>
+
+      <p class="small muted">
+
+        &copy;
+
+        <span id="year">
+          2026
+        </span>
+
+        [YOUR NAME].
+
+        All rights reserved.
+
+        · Built with Lovable
+
+      </p>
+
+    </div>
+
+
+    <nav
+      class="footer__nav"
+      aria-label="Footer"
+    >
+
+      <a href="#about">
+        About
+      </a>
+
+      <a href="#skills">
+        Skills
+      </a>
+
+      <a href="#projects">
+        Projects
+      </a>
+
+      <a href="#contact">
+        Contact
+      </a>
+
+      <a
+        href="https://linkedin.com/in/yourusername"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        LinkedIn
+      </a>
+
+      <a href="mailto:your@email.com">
+        Email
+      </a>
+
+    </nav>
+
+  </div>
+
+</footer>
+
+
+<button
+  class="icon-btn to-top"
+  id="toTop"
+  type="button"
+  aria-label="Back to top"
+>
+
+  <svg
+    class="icon"
+    viewBox="0 0 24 24"
+    aria-hidden="true"
+  >
+    <path d="M12 20V5m0 0-6 6m6-6 6 6" />
+  </svg>
+
+</button>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+     ========================================================= -->
+
+<script>
+
+(function () {
+
+  "use strict";
+
+
+  /* =========================================================
+     THEME
+     ========================================================= */
+
+  var root =
+    document.documentElement;
+
+  var toggle =
+    document.getElementById("themeToggle");
+
+
+  function applyTheme(theme){
+
+    root.setAttribute(
+      "data-theme",
+      theme
+    );
+
+    toggle.setAttribute(
+      "aria-pressed",
+      String(theme === "dark")
+    );
+
+    toggle.setAttribute(
+      "aria-label",
+      theme === "dark"
+        ? "Switch to light theme"
+        : "Switch to dark theme"
+    );
+
+  }
+
+
+  var stored = null;
+
+  try {
+
+    stored =
+      localStorage.getItem("theme");
+
+  } catch(e){}
+
+
+  var prefersDark =
+    window.matchMedia &&
+    window.matchMedia(
+      "(prefers-color-scheme: dark)"
+    ).matches;
+
+
+  applyTheme(
+    stored ||
+    (prefersDark ? "dark" : "light")
+  );
+
+
+  toggle.addEventListener(
+    "click",
+    function(){
+
+      var next =
+        root.getAttribute("data-theme") === "dark"
+          ? "light"
+          : "dark";
+
+
+      applyTheme(next);
+
+
+      try{
+
+        localStorage.setItem(
+          "theme",
+          next
+        );
+
+      }catch(e){}
+
+    }
+  );
+
+
+  /* =========================================================
+     MOBILE NAVIGATION
+     ========================================================= */
+
+  var navToggle =
+    document.getElementById("navToggle");
+
+  var mobileNav =
+    document.getElementById("mobileNav");
+
+
+  navToggle.addEventListener(
+    "click",
+    function(){
+
+      var open =
+        mobileNav.classList.toggle(
+          "is-open"
+        );
+
+
+      navToggle.setAttribute(
+        "aria-expanded",
+        String(open)
+      );
+
+
+      navToggle.setAttribute(
+        "aria-label",
+        open
+          ? "Close navigation menu"
+          : "Open navigation menu"
+      );
+
+    }
+  );
+
+
+  mobileNav.addEventListener(
+    "click",
+    function(e){
+
+      if(
+        e.target.tagName === "A"
+      ){
+
+        mobileNav.classList.remove(
+          "is-open"
+        );
+
+
+        navToggle.setAttribute(
+          "aria-expanded",
+          "false"
+        );
+
+      }
+
+    }
+  );
+
+
+  /* =========================================================
+     ACTIVE NAVIGATION STATE
+     ========================================================= */
+
+  var sections = [
+    "home",
+    "about",
+    "skills",
+    "experience",
+    "projects",
+    "certifications",
+    "testimonials",
+    "contact"
+  ]
+  .map(
+    function(id){
+      return document.getElementById(id);
+    }
+  )
+  .filter(Boolean);
+
+
+  var navLinks =
+    Array.prototype.slice.call(
+      document.querySelectorAll(
+        "#primary-nav a"
+      )
+    );
+
+
+  if(
+    "IntersectionObserver" in window
+  ){
+
+    var observer =
+      new IntersectionObserver(
+        function(entries){
+
+          entries.forEach(
+            function(entry){
+
+              if(
+                !entry.isIntersecting
+              ){
+                return;
+              }
+
+
+              navLinks.forEach(
+                function(link){
+
+                  link.classList.toggle(
+                    "is-active",
+                    link.getAttribute("href") ===
+                    "#" + entry.target.id
+                  );
+
+                }
+              );
+
+            }
+          );
+
+        },
+        {
+          rootMargin:
+            "-45% 0px -50% 0px"
+        }
+      );
+
+
+    sections.forEach(
+      function(section){
+
+        observer.observe(section);
+
+      }
+    );
+
+  }
+
+
+  /* =========================================================
+     COMPETENCY ACCORDION
+     ========================================================= */
+
+  document
+    .querySelectorAll(".acc__btn")
+    .forEach(
+      function(btn){
+
+        btn.addEventListener(
+          "click",
+          function(){
+
+            var expanded =
+              btn.getAttribute(
+                "aria-expanded"
+              ) === "true";
+
+
+            btn.setAttribute(
+              "aria-expanded",
+              String(!expanded)
+            );
+
+
+            var panel =
+              document.getElementById(
+                btn.getAttribute(
+                  "aria-controls"
+                )
+              );
+
+
+            if(panel){
+
+              panel.hidden =
+                expanded;
+
+            }
+
+          }
+        );
+
+      }
+    );
+
+
+  /* =========================================================
+     PROJECT FILTERING
+     ========================================================= */
+
+  var filters =
+    document.querySelectorAll(
+      ".filter"
+    );
+
+  var projects =
+    document.querySelectorAll(
+      "#projectGrid .project"
+    );
+
+
+  filters.forEach(
+    function(btn){
+
+      btn.addEventListener(
+        "click",
+        function(){
+
+          filters.forEach(
+            function(button){
+
+              button.classList.remove(
+                "is-active"
+              );
+
+            }
+          );
+
+
+          btn.classList.add(
+            "is-active"
+          );
+
+
+          var key =
+            btn.dataset.filter;
+
+
+          projects.forEach(
+            function(card){
+
+              var cats =
+                (
+                  card.dataset.category ||
+                  ""
+                ).split(/\s+/);
+
+
+              card.style.display =
+                (
+                  key === "all" ||
+                  cats.indexOf(key) !== -1
+                )
+                  ? ""
+                  : "none";
+
+            }
+          );
+
+        }
+      );
+
+    }
+  );
+
+
+  /* =========================================================
+     BACK TO TOP
+     ========================================================= */
+
+  var toTop =
+    document.getElementById(
+      "toTop"
+    );
+
+
+  window.addEventListener(
+    "scroll",
+    function(){
+
+      toTop.classList.toggle(
+        "is-visible",
+        window.scrollY > 600
+      );
+
+    },
+    {
+      passive:true
+    }
+  );
+
+
+  toTop.addEventListener(
+    "click",
+    function(){
+
+      var reduce =
+        window.matchMedia(
+          "(prefers-reduced-motion: reduce)"
+        ).matches;
+
+
+      window.scrollTo({
+
+        top:0,
+
+        behavior:
+          reduce
+            ? "auto"
+            : "smooth"
+
+      });
+
+    }
+  );
+
+
+  /* =========================================================
+     CONTACT FORM VALIDATION
+     ========================================================= */
+
+  var form =
+    document.getElementById(
+      "contactForm"
+    );
+
+  var status =
+    document.getElementById(
+      "formStatus"
+    );
+
+
+  function setError(
+    id,
+    message
+  ){
+
+    var input =
+      document.getElementById(id);
+
+
+    var slot =
+      document.getElementById(
+        "err-" + id
+      );
+
+
+    slot.textContent =
+      message || "";
+
+
+    input.setAttribute(
+      "aria-invalid",
+      message
+        ? "true"
+        : "false"
+    );
+
+
+    return !message;
+
+  }
+
+
+  function validate(){
+
+    var ok = true;
+
+
+    var name =
+      form.name.value.trim();
+
+    var email =
+      form.email.value.trim();
+
+    var subject =
+      form.subject.value.trim();
+
+    var message =
+      form.message.value.trim();
+
+
+    ok =
+      setError(
+        "name",
+        name.length < 2
+          ? "Please enter your name."
+          : ""
+      ) && ok;
+
+
+    ok =
+      setError(
+        "email",
+        /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)
+          ? ""
+          : "Please enter a valid email address."
+      ) && ok;
+
+
+    ok =
+      setError(
+        "subject",
+        subject.length < 3
+          ? "Please add a short subject."
+          : ""
+      ) && ok;
+
+
+    ok =
+      setError(
+        "message",
+        message.length < 20
+          ? "Please write at least 20 characters."
+          : ""
+      ) && ok;
+
+
+    return ok;
+
+  }
+
+
+  /* =========================================================
+     CONNECT CONTACT FORM BACKEND HERE
+     ========================================================= */
+
+  function submitContactForm(
+    data
+  ){
+
+    console.log(
+      "Contact form payload (not sent — no backend configured):",
+      data
+    );
+
+
+    return Promise.reject(
+      new Error(
+        "No backend configured."
+      )
+    );
+
+  }
+
+
+  form.addEventListener(
+    "submit",
+    function(e){
+
+      e.preventDefault();
+
+
+      if(!validate()){
+
+        status.innerHTML =
+          "<strong>Check the highlighted fields</strong> and try again.";
+
+        return;
+
+      }
+
+
+      var data = {
+
+        name:
+          form.name.value.trim(),
+
+        email:
+          form.email.value.trim(),
+
+        subject:
+          form.subject.value.trim(),
+
+        message:
+          form.message.value.trim()
+
+      };
+
+
+      status.innerHTML =
+        "<strong>Submitting…</strong>";
+
+
+      submitContactForm(data)
+
+        .then(
+          function(){
+
+            form.reset();
+
+            status.innerHTML =
+              "<strong>Message sent.</strong> Thanks — I'll get back to you shortly.";
+
+          }
+        )
+
+        .catch(
+          function(){
+
+            status.innerHTML =
+              "<strong>Nothing was sent.</strong> No backend is connected yet. " +
+              "Email me directly at <a href=\"mailto:your@email.com\">your@email.com</a>, or wire up " +
+              "<code>submitContactForm()</code> in the script.";
+
+          }
+        );
+
+    }
+  );
+
+
+  /* =========================================================
+     FOOTER YEAR
+     ========================================================= */
+
+  document.getElementById(
+    "year"
+  ).textContent =
+    String(
+      new Date().getFullYear()
+    );
+
+
+})();
+
+</script>
+
+</body>
+</html>
